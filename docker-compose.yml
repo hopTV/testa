@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  nextjs:
+    container_name: front-end
+    build:
+      context: ./
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    env_file:
+      - .env

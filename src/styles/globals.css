@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dancing+Script:wght@400;500;600;700&family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cherry+Bomb+One&family=Dancing+Script:wght@400;500;600;700&family=Fasthand&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    cherry bomb one;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.background-config {
+  background: rgba(60, 12, 0, 0.75);
+}
+
+.swiper_container {
+  height: 27rem;
+  width: 20rem;
+  padding: 5rem 0 !important;
+  /* position: relative; */
+}
+
+/* .swiper .swiper-coverflow {
+  width: 90% !important;
+  height: 9rem !important;
+} */
+
+/* .swiper-wrapper {
+  height: 25rem !important;
+} */
+
+.swiper-slide {
+  width: calc(100% / 3) !important;
+  height: 90%;
+  margin: 0 10px;
+  padding: 0 2px;
+  /* position: relative; */
+}
+
+.swiper-slide-next img {
+  position: relative;
+  top: -2px;
+  left: -10px;
+  width: 90% !important;
+}
+
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(
+    .swiper-slide-next
+  ):not(.swiper-slide-next + .swiper-slide)
+  img {
+  position: relative;
+  left: 70px;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.swiper-slide-prev img {
+  position: relative;
+  left: 35px;
+  width: 100% !important;
+  top: 10px;
+}
+
+.swiper-slide-next + .swiper-slide img {
+  position: relative;
+  top: 30px;
+  left: -40px;
+  width: 70%;
+}
+
+.swiper-slide.swiper-slide-next + .swiper-slide + .swiper-slide img {
+  padding-left: 20px;
+}
+
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top {
+  height: 0 !important;
+}
+
+.swiper-slide-next .container-land .item-cot {
+  position: absolute;
+  top: -4rem;
+  left: 6px;
+}
+
+.swiper-slide-next + .swiper-slide .container-land .item-cot {
+  position: absolute;
+  top: -2rem;
+  left: -1.7rem;
+}
+
+.swiper-slide-prev .container-land .item-cot {
+  position: absolute;
+  top: -3.3rem;
+  left: 3.5rem;
+}
+
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(
+    .swiper-slide-next
+  ):not(.swiper-slide-next + .swiper-slide)
+  .container-land
+  .item-cot {
+  position: absolute;
+  top: -4rem;
+  left: 5.5rem;
+}
+
+.banner {
+  display: none;
+}
+
+.bg-bottom {
+  backdrop-filter: blur(2px);
+  background: transparent;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+}
+.swiper-slide-active .bg-top .bg-image {
+  width: 100% !important;
+}
+
+.swiper-slide-prev .water-container .water-body {
+  position: relative;
+  right: 4px;
+  width: 90%;
+}
+
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(
+    .swiper-slide-next
+  ):not(.swiper-slide-next + .swiper-slide)
+  .water-container
+  .water-body {
+  position: relative;
+  top: -2.7rem;
+  right: 4px;
+  width: 90%;
+}
+
+.swiper-slide-next .water-container .water-body {
+  position: relative;
+  right: 5px;
+  width: 90%;
+}
+
+.swiper-slide-next + .swiper-slide .water-container .water-body {
+  position: relative;
+  right: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/* table history */
+.my-table {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 450px) {
+  .layout-pc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url('/images/background_pc.png');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+    position: fixed;
+  }
+}
+
+.react-datepicker {
+  z-index: 99 !important;
+  border-radius: 1rem !important;
+  color: #6f6e6e !important;
+}
+.react-datepicker-year-header {
+  color: #6f6e6e !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range,
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #b05b08 !important;
+  color: #1f1e1e !important;
+}
+.react-datepicker__month-container,
+.react-datepicker__header,
+.react-datepicker-year-header {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px !important;
+  background: #f4fbdf !important;
+  font-size: larger;
+  font-weight: 900;
+  color: #6f6e6e;
+}
+
+.react-datepicker__month,
+.react-datepicker__month-text {
+  margin: 5px !important;
+}
